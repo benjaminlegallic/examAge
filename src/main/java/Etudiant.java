@@ -1,4 +1,7 @@
+import java.util.Calendar;
+
 public class Etudiant {
+
 
     private String nom;
 
@@ -6,10 +9,18 @@ public class Etudiant {
 
     private String adresse;
 
-    public Etudiant(String nom, String prenom, String adresse) {
+    private String annee;
+
+    private String age;
+
+
+
+    public Etudiant(String nom, String prenom, String adresse, String annee, String age) {
         this.nom = nom;
         this.prenom = prenom;
         this.adresse = adresse;
+        this.annee = annee;
+        this.age = age;
     }
 
     public String getNom() {
@@ -35,4 +46,22 @@ public class Etudiant {
     public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
+
+    public String getAnnee() {
+        return annee;
+    }
+
+    public void setAnnee(String annee) {
+        this.annee = annee;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
 }
+
