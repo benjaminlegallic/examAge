@@ -14,12 +14,13 @@ public class Etudiant {
     private int age;
 
 
-    public Etudiant(String nom, String prenom, String adresse, int annee, int anneeDeNaissance) {
+    public Etudiant(String nom, String prenom, String adresse, int anneeDeNaissance) {
         this.nom = nom;
         this.prenom = prenom;
         this.adresse = adresse;
         this.annee = annee;
         this.anneeDeNaissance = anneeDeNaissance;
+
     }
 
     public String getNom() {
