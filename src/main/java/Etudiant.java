@@ -1,5 +1,3 @@
-import java.util.Calendar;
-
 public class Etudiant {
 
 
@@ -9,18 +7,19 @@ public class Etudiant {
 
     private String adresse;
 
-    private String annee;
+    private int annee = 2016;
 
-    private String age;
+    private int anneeDeNaissance;
+
+    private int age;
 
 
-
-    public Etudiant(String nom, String prenom, String adresse, String annee, String age) {
+    public Etudiant(String nom, String prenom, String adresse, int annee, int anneeDeNaissance) {
         this.nom = nom;
         this.prenom = prenom;
         this.adresse = adresse;
         this.annee = annee;
-        this.age = age;
+        this.anneeDeNaissance = anneeDeNaissance;
     }
 
     public String getNom() {
@@ -47,20 +46,25 @@ public class Etudiant {
         this.adresse = adresse;
     }
 
-    public String getAnnee() {
+    public int getAnnee() {
         return annee;
     }
 
-    public void setAnnee(String annee) {
+    public void setAnnee(int annee) {
         this.annee = annee;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public int calculDeAge() {
+        int age = annee-anneeDeNaissance;
+        return age;
     }
 
 }
